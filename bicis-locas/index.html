@@ -12,38 +12,40 @@
     <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/registro.css">
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/donottouchthisfile.js'></script>
   </head>
   <body>
     <section class="form-container">
       <div class="container-fluid">
-        <form action="#" id="form" method="form" class="form-signup">
+        <form action="#" id="form" method="form" class="form-signup" >
           <h2 id="form-signup-heading">
             Bicis Locas
           </h2>
           <div class="name-container input-box">
             <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control"
-            placeholder="Ingrese su nombre">
+            placeholder="Ingrese su nombre" required>
           </div>
           <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
             <input type="text" id="lastname" class="form-control"
-            placeholder="Ingrese su apellido">
+            placeholder="Ingrese su apellido" required>
           </div>
           <div class="email-container input-box">
             <label for="inputEmail" class="sr-only">
               Correo Electrónico
             </label>
-            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" autofocus="">
+            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" autofocus="" required>
           </div>
           <div class="form-group">
             <label for="inputPassword" class="sr-only">
               Contraseña
             </label>
-            <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
+            <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña" required>
           </div>
           <div class="form-group">
-            <select id="bici" class="form-control">
+            <select id="bici" class="form-control" required>
               <option value="0">Selecciona tu tipo de bici</option>
               <option value="urbana">Urbana</option>
               <option value="treking">Treking</option>
@@ -53,7 +55,7 @@
           </div>
           <div class="input-group">
             <div class="input-group-addon">@</div>
-            <input type="text" class="form-control" id="input-social" placeholder="Twitter">
+            <input type="text" class="form-control" id="input-social" placeholder="Twitter"required>
           </div>
           <div class="checkbox">
             <label>
@@ -61,12 +63,11 @@
               <span>Deseo recibir información vía email</span>
             </label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit" onclick="validar()">Registrar</button>
+          <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit" onclick="validateForm()">Registrar</button>
         </form>
       </div>
     </section>
     <!-- /container -->
-    <script type='text/javascript' src='js/main.js'></script>
-    <script type='text/javascript' src='js/donottouchthisfile.js'></script>
+
   </body>
 </html>
