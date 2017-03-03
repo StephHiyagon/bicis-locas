@@ -18,11 +18,14 @@ function validateForm(){
     alert("todos los campos son obligatorios");
     return false;
     }
-  else if (!(/^[A-Z]+[a-z]$/.test(nombre)) ) {
+  else if (!(/^[A-Z][a-z]*/.test(nombre)) ) {
     alert("Sólo se permiten caracteres de la a- z, la primera letra debe ser mayúscula");
     return false;
     }
-
+  else if (!(/^[A-Z][a-z]*/.test(apellido)) ) {
+      alert("Sólo se permiten caracteres de la a- z, la primera letra debe ser mayúscula");
+      return false;
+      }
   else if (!(/\w+@\w+\.+[a-z]/.test(correo))) {
       alert("El correo no tiene un formato valido");
       return false;
