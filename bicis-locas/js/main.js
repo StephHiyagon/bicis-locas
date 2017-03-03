@@ -19,11 +19,11 @@ function validateForm(){
     return false;
     }
   else if (!(/^[A-Z][a-z]*/.test(nombre)) ) {
-    alert("Sólo se permiten caracteres de la a- z, la primera letra debe ser mayúscula");
+    alert("En el NOMBRE:'Sólo se permiten caracteres de la a- z, la primera letra debe ser mayúscula'");
     return false;
     }
   else if (!(/^[A-Z][a-z]*/.test(apellido)) ) {
-      alert("Sólo se permiten caracteres de la a- z, la primera letra debe ser mayúscula");
+      alert("En el APELLIDO:'Sólo se permiten caracteres de la a- z, la primera letra debe ser mayúscula'");
       return false;
       }
   else if (!(/\w+@\w+\.+[a-z]/.test(correo))) {
@@ -38,4 +38,11 @@ function validateForm(){
     alert("la contraseña no es valida");
     return false;
   }
+  document.getElementById('name').value="";
+  document.getElementById('lastname').value="";
+  document.getElementById('input-email').value="";
+  document.getElementById('input-password').value="";
+  document.getElementById('bici').value="";
+  document.getElementById('input-social').value="";
+
 }
