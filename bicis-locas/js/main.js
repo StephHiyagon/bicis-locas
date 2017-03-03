@@ -1,5 +1,6 @@
 
-function validateForm(){
+function validateForm(event){
+  event.preventDefault();
   var nombre=document.getElementById('name').value;
   var apellido=document.getElementById('lastname').value;
   var correo=document.getElementById('input-email').value;
